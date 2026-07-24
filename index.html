@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UHS Kakanchour</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7fa;
+}
+
+header{
+background:#0d47a1;
+color:white;
+padding:15px 50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+}
+
+nav a:hover{
+color:#FFD54F;
+}
+
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero p{
+margin:20px 0;
+font-size:22px;
+}
+
+.btn{
+display:inline-block;
+background:#ff9800;
+padding:14px 35px;
+color:white;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+}
+
+.btn:hover{
+background:#f57c00;
+}
+
+section{
+padding:70px 8%;
+}
+
+.title{
+text-align:center;
+font-size:38px;
+color:#0d47a1;
+margin-bottom:40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+color:#1565c0;
+margin-bottom:15px;
+}
+
+.notice{
+background:#fff3cd;
+border-left:8px solid orange;
+padding:20px;
+font-size:18px;
+line-height:1.8;
+}
+
+.principal{
+display:grid;
+grid-template-columns:300px 1fr;
+gap:40px;
+align-items:center;
+}
+
+.principal img{
+width:100%;
+border-radius:10px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+}
+
+.gallery img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px;
+transition:.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+form{
+max-width:700px;
+margin:auto;
+}
+
+input,textarea{
+width:100%;
+padding:15px;
+margin:12px 0;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:16px;
+}
+
+button{
+background:#0d47a1;
+color:white;
+padding:15px 35px;
+border:none;
+cursor:pointer;
+border-radius:6px;
+font-size:16px;
+}
+
+button:hover{
+background:#1565c0;
+}
+
+footer{
+background:#0d47a1;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:30px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav a{
+display:inline-block;
+margin:8px;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.principal{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">🏫 +2 UHS Kakanchour</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#academics">Academics</a>
+<a href="#notice">Notice</a>
+
+<a href="#teachers">Teachers</a>
+<a href="#gallery">Gallery</a>
+<a href="#admission">Admission</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>Welcome to UHS Kakanchour</h1>
+
+<p>Learning Today • Leading Tomorrow</p>
+
+<a href="#about" class="btn">Explore School</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Our School</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Our Mission</h3>
+<p>To provide quality education with discipline, creativity and moral values.</p>
+</div>
+
+<div class="card">
+<h3>Our Vision</h3>
+<p>To prepare responsible citizens through academic excellence and innovation.</p>
+</div>
+
+<div class="card">
+<h3>Core Values</h3>
+<p>Respect, Honesty, Discipline, Leadership and Lifelong Learning.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="academics">
+
+<!--        <div class="container">             Comment-->
+
+<h2 class="section-title">Academics</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Primary Education</h3>
+<p>Strong foundation in literacy, numeracy, and moral education.</p>
+</div>
+
+<div class="card">
+<h3>Middle School</h3>
+<p>Comprehensive curriculum with practical learning and activities.</p>
+</div>
+
+<div class="card">
+<h3>Computer Education</h3>
+<p>Digital learning, computer literacy, and technology integration.</p>
+</div>
+
+</section>
+
+
+<section id="notice">
+
+<h2 class="title">Notice Board</h2>
+
+<div class="notice">
+
+📢 Morning Assembly: 9:30 AM<br>
+📢 Monthly Test starts from 15th August.<br>
+📢 Independence Day Celebration on 15th August.<br>
+📢 Parents Meeting on Last Saturday of every month.
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Principal's Message</h2>
+
+<div class="principal">
+
+<img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=800&q=80">
+
+<div>
+
+<h3>Dear Students & Parents,</h3>
+
+<p>
+
+Welcome to UHS Kakanchour.
+
+We believe every child has the potential to succeed through dedication,
+hard work, and quality education. Our school is committed to developing
+knowledge, discipline, confidence, and character among students.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="teachers">
+
+<h2 class="title">Our Teachers</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>English</h3>
+<p>Qualified English Teacher</p>
+</div>
+
+<div class="card">
+<h3>Hindi</h3>
+<p>Qualified Hindi Teacher</p>
+</div>
+
+<div class="card">
+<h3>Mathematics</h3>
+<p>Experienced Mathematics Teacher</p>
+</div>
+
+<div class="card">
+<h3>Science</h3>
+<p>Dedicated Science Faculty</p>
+</div>
+
+<div class="card">
+<h3>Social Science</h3>
+<p>Experienced Social Science Teacher</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2 class="title">School Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80">
+
+<img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=800&q=80">
+
+<img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=800&q=80">
+
+<img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=800&q=80">
+
+</div>
+
+</section>
+
+<section id="admission">
+
+<h2 class="title">Admission</h2>
+
+<div class="card">
+
+<h3>Admission Open</h3>
+
+<p>
+
+Admissions are open for eligible students.
+
+Required Documents:
+
+<ul>
+
+<li>Birth Certificate</li>
+
+<li>Aadhaar Card</li>
+
+<li>Previous School Transfer Certificate</li>
+
+<li>Passport Size Photographs</li>
+
+</ul>
+
+</p>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact Us</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Email Address">
+
+<input type="text" placeholder="Phone Number">
+
+<textarea rows="6" placeholder="Message"></textarea>
+
+<button>Send Message</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<h3>UHS Kakanchour</h3>
+
+<p>Kakanchour, Bihar, India</p>
+
+<p>Email: uhskakanchour@gmail.com</p>
+
+<p>Phone: +91-XXXXXXXX14</p>
+
+<p>© 2026 UHS Kakanchour. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
